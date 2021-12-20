@@ -1,0 +1,3 @@
+long_stage:
+  script:
+    - for ((i=0;i<3600;i++)) ; do sleep 3 ; echo "Date is $(date) ... sleeping 3 seconds" ; done
