@@ -4,7 +4,7 @@ make:
   script:
     - cd makefile_project
     - make test
-    - sleep 599
+    - sleep 100
   tags:
     - ppp5
     
@@ -12,7 +12,7 @@ make2:
   variables:
     ORD_SOUMET_D: "ppp6"
   script:
-    - sleep 30
+    - sleep 100
   tags:
     - ppp5
 
