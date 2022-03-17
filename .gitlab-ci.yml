@@ -2,7 +2,7 @@ make:
   script:
     - cd makefile_project
     - make test
-    - sleep 100
+    - sleep 599
   tags:
     - ppp5
 
