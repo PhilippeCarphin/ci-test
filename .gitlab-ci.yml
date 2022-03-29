@@ -1,11 +1,10 @@
-
 make:
   script:
     - cd makefile_project
     - make test
     - sleep 100
   tags:
-    - ordsoumet-9
+    - ppp5
 
     
 make2:
@@ -14,6 +13,6 @@ make2:
   script:
     - sleep 100
   tags:
-    - ordsoumet-9
+    - ppp5
 
 
