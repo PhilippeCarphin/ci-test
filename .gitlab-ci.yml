@@ -6,7 +6,7 @@ make:
     - make test
     - sleep 100
   tags:
-    - gitlab-9
+    - asdfasdf
 
     
 make2:
@@ -15,6 +15,6 @@ make2:
   script:
     - sleep 100
   tags:
-    - gitlab-9
+    - asdfasdf
 
 
