@@ -1,5 +1,4 @@
-variables:
-  ORD_SOUMET_MACH: "ppp5"
+
 make:
   script:
     - cd makefile_project
