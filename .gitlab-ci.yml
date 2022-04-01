@@ -3,16 +3,5 @@ make:
     - cd makefile_project
     - make test
     - sleep 100
-  tags:
-    - ppp5
-
-    
-make2:
-  variables:
-    ORD_SOUMET_D: "ppp6"
-  script:
-    - sleep 100
-  tags:
-    - ppp5
 
 
