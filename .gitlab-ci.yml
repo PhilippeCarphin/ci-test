@@ -4,7 +4,5 @@ make:
     - make test
     - sleep 100
   tags:
-    - ppp5
-    - ordsoumet-9
 
 
