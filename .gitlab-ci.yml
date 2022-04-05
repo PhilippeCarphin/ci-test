@@ -3,5 +3,6 @@ make:
     - cd makefile_project
     - make test
     - sleep 100
-
+  tags:
+    - U2
 
