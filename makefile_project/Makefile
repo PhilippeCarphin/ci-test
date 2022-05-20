@@ -9,3 +9,4 @@ main:main.o
 
 test:main
 	./$<
+
