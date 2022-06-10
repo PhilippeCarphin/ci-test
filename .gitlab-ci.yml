@@ -2,5 +2,5 @@ make:
   script:
     - cd makefile_project
     - make test
-    - sleep 30
+    - sleep 300
 
