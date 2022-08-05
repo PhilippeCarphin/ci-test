@@ -1,4 +1,8 @@
 make:
+  variables:
+    ORD_SOUMET_MACH: gpsc1
+    ORD_SOUMET_PROJECT: eccc_mrd
+    ORD_SOUMET_IMAGE: eccc/eccc_all_default_ubuntu-18.04-amd64_latest
   script:
     - cd makefile_project
     - make test
