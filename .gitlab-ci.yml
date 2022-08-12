@@ -9,5 +9,5 @@ make:
   script:
     - cd makefile_project
     - make test
-    - sleep 300
+    - sleep 20
 
