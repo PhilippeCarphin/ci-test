@@ -11,3 +11,12 @@ make:
     - make test
     - sleep 20
 
+ppp5:
+  variables:
+    ORD_SOUMET_TMPFS: "1G"
+    ORD_SOUMET_M: "8G"
+    ORD_SOUMET_C: "4"
+  script:
+    - cd makefile_project
+    - make test
+    - sleep 20
