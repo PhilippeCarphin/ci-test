@@ -3,7 +3,7 @@ variables:
   ORD_SOUMET_M: "8G"
   ORD_SOUMET_C: "2"
 
-no_mach
+no_mach:
   script:
     - sleep 20
    
