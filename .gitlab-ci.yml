@@ -1,10 +1,22 @@
+variables:
+  ORD_SOUMET_TMPFS: "1G"
+  ORD_SOUMET_M: "8G"
+  ORD_SOUMET_C: "2"
 
-    
+no_mach
+  script:
+    - sleep 20
+   
+gpsc3:
+  variables:
+    ORD_SOUMET_MACH: gpsc3
+    ORD_SOUMET_PROJECT: eccc_cmdd
+  script:
+    - sleep 20
+
 underhill:
   variables:
     ORD_SOUMET_MACH: "underhill"
-    ORD_SOUMET_TMPFS: "1G"
-    ORD_SOUMET_M: "8G"
     ORD_SOUMET_C: "80"
   script:
     - sleep 20
@@ -12,8 +24,18 @@ underhill:
 robert:
   variables:
     ORD_SOUMET_MACH: "robert"
-    ORD_SOUMET_TMPFS: "1G"
-    ORD_SOUMET_M: "8G"
     ORD_SOUMET_C: "80"
+  script:
+    - sleep 20
+    
+ppp5:
+  variables:
+    ORD_SOUMET_MACH: "ppp5"
+  script:
+    - sleep 20
+    
+ppp6:
+  variables:
+    ORD_SOUMET_MACH: "ppp6"
   script:
     - sleep 20
