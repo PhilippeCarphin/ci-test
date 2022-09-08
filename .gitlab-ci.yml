@@ -7,16 +7,39 @@ make:
     ORD_SOUMET_C: "4"
     # ORD_SOUMET_IMAGE: eccc/eccc_all_default_ubuntu-18.04-amd64_latest
   script:
-    - cd makefile_project
-    - make test
     - sleep 20
 
-ppp5:
+same_mach_as_runner:
   variables:
     ORD_SOUMET_TMPFS: "1G"
     ORD_SOUMET_M: "8G"
     ORD_SOUMET_C: "4"
   script:
-    - cd makefile_project
-    - make test
+    - sleep 20
+
+ppp6:
+  variables:
+    ORD_SOUMET_MACH: "ppp6"
+    ORD_SOUMET_TMPFS: "1G"
+    ORD_SOUMET_M: "8G"
+    ORD_SOUMET_C: "4"
+  script:
+    - sleep 20
+    
+underhill:
+  variables:
+    ORD_SOUMET_MACH: "underhill"
+    ORD_SOUMET_TMPFS: "1G"
+    ORD_SOUMET_M: "8G"
+    ORD_SOUMET_C: "4"
+  script:
+    - sleep 20
+
+robert:
+  variables:
+    ORD_SOUMET_MACH: "robert"
+    ORD_SOUMET_TMPFS: "1G"
+    ORD_SOUMET_M: "8G"
+    ORD_SOUMET_C: "4"
+  script:
     - sleep 20
