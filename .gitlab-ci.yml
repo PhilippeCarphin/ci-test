@@ -2,17 +2,34 @@ variables:
   ORD_SOUMET_TMPFS: "1G"
   ORD_SOUMET_M: "8G"
   ORD_SOUMET_C: "2"
+  PHIL_VARIABLE: "toplevel value"
+  USE_ENVIRONMENT: "${HOME}"
 
-no_mach:
-  script:
-    - sleep 20
-   
-empty_mach:
+before_script:
+  - export BEFORE_SCRIPT_VAR=${HOME}
+  - echo "This is the before script part"
+  - echo "PHIL_VARIABLE=${PHIL_VARIABLE}"
+
+demo_variables:
   variables:
-    ORD_SOUMET_MACH: ""
+    PHIL_VARIABLE: "specific value"
   script:
-    - echo "The value of ORD_SOUMET_MACH is '${ORD_SOUMET_MACH}'"
+    - echo "The value of BEFORE_SCRIPT_VAR is '${BEFORE_SCRIPT_VAR}'"
     - sleep 5
+
+
+
+
+      # no_mach:
+      #   script:
+      #     - sleep 20
+      #    
+      # empty_mach:
+      #   variables:
+      #     ORD_SOUMET_MACH: ""
+      #   script:
+      #     - echo "The value of ORD_SOUMET_MACH is '${ORD_SOUMET_MACH}'"
+      #     - sleep 5
 
       # gpsc3:
       #   variables:
