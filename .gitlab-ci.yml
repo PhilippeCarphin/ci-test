@@ -3,7 +3,8 @@ variables:
   ORD_SOUMET_M: "8G"
   ORD_SOUMET_C: "2"
   PHIL_VARIABLE: "toplevel value"
-  USE_ENVIRONMENT: "$ENV{HOME}"
+  USE_ENVIRONMENT: "${HOME}"
+  USE_OTHER_YAML_VAR: "${PHIL_VARIABLE}"
 
 
 before_script:
@@ -15,7 +16,8 @@ demo_variables:
   variables:
     PHIL_VARIABLE: "specific value"
   script:
-    - echo "YAML variable that uses environment '${USE_ENVIRONMENT}'"
+    - echo "YAML variable that uses environment '${USE_ENVIRONMENT}'.  We can see that when YAML variables are resolved, environment variables are not used"
+    - echo "YAML variable that uses other YAML variable '${USE_OTHER_YAML_VAR}'"
     - echo "The value of BEFORE_SCRIPT_VAR is '${BEFORE_SCRIPT_VAR}'"
     - sleep 5
 
