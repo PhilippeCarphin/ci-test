@@ -7,35 +7,42 @@ no_mach:
   script:
     - sleep 20
    
-gpsc3:
+empty_mach:
   variables:
-    ORD_SOUMET_MACH: gpsc3
-    ORD_SOUMET_PROJECT: eccc_cmdd
+    ORD_SOUMET_MACH: ""
   script:
-    - sleep 20
+    - echo "The value of ORD_SOUMET_MACH is '${ORD_SOUMET_MACH}'"
+    - sleep 5
 
-underhill:
-  variables:
-    ORD_SOUMET_MACH: "underhill"
-    ORD_SOUMET_C: "80"
-  script:
-    - sleep 20
-
-robert:
-  variables:
-    ORD_SOUMET_MACH: "robert"
-    ORD_SOUMET_C: "80"
-  script:
-    - sleep 20
-    
-ppp5:
-  variables:
-    ORD_SOUMET_MACH: "ppp5"
-  script:
-    - sleep 20
-    
-ppp6:
-  variables:
-    ORD_SOUMET_MACH: "ppp6"
-  script:
-    - sleep 20
+      # gpsc3:
+      #   variables:
+      #     ORD_SOUMET_MACH: gpsc3
+      #     ORD_SOUMET_PROJECT: eccc_cmdd
+      #   script:
+      #     - sleep 20
+      # 
+      # underhill:
+      #   variables:
+      #     ORD_SOUMET_MACH: "underhill"
+      #     ORD_SOUMET_C: "80"
+      #   script:
+      #     - sleep 20
+      # 
+      # robert:
+      #   variables:
+      #     ORD_SOUMET_MACH: "robert"
+      #     ORD_SOUMET_C: "80"
+      #   script:
+      #     - sleep 20
+      #     
+      # ppp5:
+      #   variables:
+      #     ORD_SOUMET_MACH: "ppp5"
+      #   script:
+      #     - sleep 20
+      #     
+      # ppp6:
+      #   variables:
+      #     ORD_SOUMET_MACH: "ppp6"
+      #   script:
+      #     - sleep 20
