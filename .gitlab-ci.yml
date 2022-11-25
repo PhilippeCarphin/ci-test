@@ -20,6 +20,8 @@ demo_variables:
     - echo "YAML variable that uses other YAML variable '${USE_OTHER_YAML_VAR}'"
     - echo "The value of BEFORE_SCRIPT_VAR is '${BEFORE_SCRIPT_VAR}'"
     - sleep 5
+  tags:
+    - maybe-custom
 
 
 
