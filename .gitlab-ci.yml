@@ -12,6 +12,15 @@ before_script:
   - echo "This is the before script part"
   - echo "PHIL_VARIABLE=${PHIL_VARIABLE}"
 
+demo_bernard:
+  script:
+    - echo "make"
+    - echo "rouler un test"
+    - env | sort
+    - cd makefile_project
+    - make
+    - make test
+
 demo_variables:
   variables:
     PHIL_VARIABLE: "specific value"
