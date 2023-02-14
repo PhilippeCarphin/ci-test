@@ -20,6 +20,8 @@ demo_bernard:
     - cd makefile_project
     - make
     - make test
+  tags:
+    - maybe-custom
 
 demo_variables:
   variables:
