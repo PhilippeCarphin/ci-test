@@ -24,8 +24,6 @@ demo_bernard:
     - maybe-custom
 
 demo_variables:
-  variables:
-    PHIL_VARIABLE: "specific value"
   script:
     - echo "YAML variable that uses environment '${USE_ENVIRONMENT}'.  We can see that when YAML variables are resolved, environment variables are not used"
     - echo "YAML variable that uses other YAML variable '${USE_OTHER_YAML_VAR}'"
