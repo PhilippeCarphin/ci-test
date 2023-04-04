@@ -1,6 +1,7 @@
 variables:
   ORD_SOUMET_TMPFS: "1G"
   ORD_SOUMET_M: "8G"
+  ORD_SOUMET_CM: "8G"
   ORD_SOUMET_C: "2"
   PHIL_VARIABLE: "toplevel value"
   USE_ENVIRONMENT: "${HOME}"
