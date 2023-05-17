@@ -20,8 +20,6 @@ demo_bernard:
     - cd makefile_project
     - make
     - make test
-  tags:
-    - maybe-custom
 
 demo_variables:
   script:
@@ -30,11 +28,6 @@ demo_variables:
     - echo "The value of BEFORE_SCRIPT_VAR is '${BEFORE_SCRIPT_VAR}'"
     - sleep 10
     - exit 88
-  tags:
-    - maybe-custom
-
-
-
 
       # no_mach:
       #   script:
